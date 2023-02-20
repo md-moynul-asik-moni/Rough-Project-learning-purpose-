@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>KNN</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+    
+        <h1> K nearest neighbour</h1>
+
+
+        {% for i in l %}
+        {{i}}<br>
+        {% endfor %}
+
+
+        <br><br>
+
+
+<div align="center">
+        <form action="">
+
+            Name: <input type="text" name="" id="" placeholder="enter your name here"><br><br>
+            Email: <input type="email" name="" id="" placeholder="enter your email here"><br><br>
+            Password: <input type="password" name="" id="" placeholder="enter your password here"><br><br>
+            Gender: <br><br>
+            <input type="radio" name="gender" id="" >Male
+            <input type="radio" name="gender" id="" >Female
+            <input type="radio" name="gender" id="" >Other
+            <br><br>
+            Course you want:<br><br>
+             <input type="checkbox" name="" id="" >ML
+             <input type="checkbox" name="" id="" >DEV 
+             <input type="checkbox" name="" id="" >IP 
+             <br><br>
+             Date and Time: <input type="date" name="" id=""></input>
+             <br><br>
+             Upload your image: <input type="file" name="" id=""></input>
+
+             <br><br>
+             <input type="reset" value="Reset"></input>
+             <input type="submit" value="Submit"></input>
+
+
+        </from>
+
+    </div>
+
+    </body>
+</html>

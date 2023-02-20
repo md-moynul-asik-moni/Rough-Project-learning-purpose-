@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="{% static "css/t.css" %}">
+        <title>btd</title>
+    </head>
+    <body>
+    
+    
+    
+    {% if t %}
+    <table >
+        <tr>
+            <th>ID</th>
+            <th>TID</th>
+            <th>TName</th>
+            <th>TEmail</th>
+        </tr>
+        {% for i in t %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.tid}}</td>
+            <td>{{i.tname}}</td>
+            <td>{{i.temail}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {%else %}
+    <h1>query is empty</h1>
+
+    {% endif %}
+
+
+
+        </body>
+</html>

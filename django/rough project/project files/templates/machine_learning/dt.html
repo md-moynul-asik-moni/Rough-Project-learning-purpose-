@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+    
+        <h1> dt takes {{t}} ms and accuracy is {{a}}%</h1>
+        <h2>test for filtering {{f|upper}}</h2>
+        <h2>test for filtering {{f|capfirst}}</h2>
+        <h2>test for filtering {{f|length}}</h2>
+
+    </br>
+
+      {% if f %}
+      <h1>This is if tag </h2>
+      {% else %}
+      <h1>This is else tag </h2>
+      {% endif %} 
+
+      <img src= "{% static 'images/cp.JPG' %}" alt = logo />
+
+      <ul style="list-style-type:circle ;">
+        <li> DT </li>
+        <li> KNN </li>
+        <li> NN </li>
+
+
+      </ul>
+
+      <ol type="i">
+        <li> DT </li>
+        <li> KNN </li>
+        <li> NN </li>
+
+      </ol>
+
+
+      <p>This <small><i>is</i></small> a <b>paragraph</b></p>
+      <p>
+        <del>300</del>
+       <!-- <ins>250</ins>--> 
+    </p>
+
+
+
+
+      <div>
+        <p>(a+b)<sup>2</sup></p>
+
+        <p><abbr title = 'decision Tree'>dt</abbr></p>
+
+        <h1>This is H1</h1>
+        <h6>This is H6</h6>
+      </div>
+    
+
+
+      <pre>
+        hi                          this is
+                       <span style = "color: red;">test fot pre tag</span>
+      </pre>
+    </body>
+
+    <p>  this is<span style = "color: blue;">test fot span tag</span> </p>
+
+
+
+    <form action=""> 
+
+        <input type="text" name="" id="" placeholder="Enter Your Name"><br><br>
+        <input type="email" name="" id="" placeholder="Enter Your email"><br><br>
+        <input type="password" name="" id="" placeholder="Enter Your password"><br><br>
+        <input type="radio" name="gender" id="" >Male
+        <input type="radio" name="gender" id="" >Female
+        <input type="radio" name="gender" id="" >Others
+
+        <br><br>
+
+
+        <input type="checkbox" name="" id="" >ML
+        <input type="checkbox" name="" id="" >NN
+        <input type="checkbox" name="" id="" >BC
+
+        <br><br>
+
+        <input type="file" name="" id=""></input>
+        <br><br>
+        <input type="datetime-local" name="" id=""></input>
+        <br><br>
+
+        <input type="submit" value="Submit"></input>
+        <input type="reset" value="Reset"></input>
+        
+
+        <br><br>
+
+
+        <table width="500" border="2" align='center'>
+            <tr>
+                <th>DT</th>
+                <th>kNN</th>
+                <th>VGG19</th>
+                <th>GoogleNet</th>
+                
+            </tr>
+            <tr align="center">
+                <td>98.2</td>
+                <td>50.0</td>
+                <td>12.3</td>
+                <td>89.0</td>
+                
+            </tr>
+
+        </table>
+
+    </from>
+</html>
